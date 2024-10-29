@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Weather</title>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container d-flex justify-content-between">
+            <div class="nn">
+                <div class="mm d-flex">
+                    <a class="navbar-brand text-white" href="/index.html">
+                        <img src="img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top w-75">
+                    </a>
+                    <p class="logo">
+                        Weather
+                        <br/>
+                        <span class="go">Tagline goes here</span>
+                        
+                    </p>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link text-white active rounded-pill" aria-current="page" href="/index.html">Home</a>
+                    <a class="nav-link text-white" href="/index.html">News</a>
+                    <a class="nav-link text-white" href="/index.html">Live cameras</a>
+                    <a class="nav-link text-white" href="/index.html">Photos</a>
+                    <a class="nav-link text-white" href="/contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+    <div class="home">
+        <div class="container">
+            <div class="input d-flex justify-content-center">
+                <div class="input-group mb-3 m-3 w-75">
+                        <input type="text" class="form-control" id="location_country" placeholder="find your location ..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary text-white" type="button" id="button">find</button>
+                </div>
+            </div>
+            <div class="row" id="demo">
+                <!-- <div class="col-md-4 g-2">
+                    <div class="card mb-3 card2" >
+                        <div class="card-header d-flex justify-content-between">
+                            <div class="day">Saturday</div>
+                            <div class="month">28September</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="info d-flex flex-column justify-content-center align-items-center">
+                                <div class="location">Cairo</div>
+                                <div class="degree">25.5 °C</div>
+                                <img src="img/download.png" class="w-25" alt="">
+                            </div>
+                            <div class="clear">
+                                clear
+                            </div>
+                            <div class="contain d-flex justify-content-between">
+                                <span>
+                                    <img src="img/icon-umberella.png" alt="" srcset="">
+                                    20%
+                                </span>
+                                <span>
+                                    <img src="img/icon-compass.png" alt="" srcset="">
+                                    18km/h
+                                </span>
+                                <span>
+                                    <img src="img/icon-wind.png" alt="" srcset="">
+                                    East
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 g-2">
+                    <div class="card mb-3 card2" >
+                        <div class="card-header d-flex justify-content-between">
+                            <div class="day">Saturday</div>
+                            <div class="month">28September</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="info d-flex flex-column justify-content-center align-items-center">
+                                <div class="location">Cairo</div>
+                                <div class="degree">25.5 °C</div>
+                                <img src="img/download.png" class="w-25" alt="">
+                            </div>
+                            <div class="clear">
+                                clear
+                            </div>
+                            <div class="contain d-flex justify-content-between">
+                                <span>
+                                    <img src="img/icon-umberella.png" alt="" srcset="">
+                                    20%
+                                </span>
+                                <span>
+                                    <img src="img/icon-compass.png" alt="" srcset="">
+                                    18km/h
+                                </span>
+                                <span>
+                                    <img src="img/icon-wind.png" alt="" srcset="">
+                                    East
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 g-2">
+                    <div class="card mb-3 card2" >
+                        <div class="card-header d-flex justify-content-between">
+                            <div class="day">Saturday</div>
+                            <div class="month">28September</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="info d-flex flex-column justify-content-center align-items-center">
+                                <div class="location">Cairo</div>
+                                <div class="degree">25.5 °C</div>
+                                <img src="img/download.png" class="w-25" alt="">
+                            </div>
+                            <div class="clear">
+                                clear
+                            </div>
+                            <div class="contain d-flex justify-content-between">
+                                <span>
+                                    <img src="img/icon-umberella.png" alt="" srcset="">
+                                    20%
+                                </span>
+                                <span>
+                                    <img src="img/icon-compass.png" alt="" srcset="">
+                                    18km/h
+                                </span>
+                                <span>
+                                    <img src="img/icon-wind.png" alt="" srcset="">
+                                    East
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <form>
+                        <div class="mb-3 my-5 d-flex">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email to subscribe ..." aria-describedby="emailHelp">
+                            <button class="btn btn-outline-secondary text-white" type="submit" id="subscribe">subscribe</button>
+                        </div>
+                    </form>
+                    <p class="parag text-white">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                </div>
+                <div class="col-md-3 d-flex justify-content-end align-items-center">
+                    <div class="icons">
+                        <div class="cont d-flex">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-google-plus"></i>
+                            <i class="fa-brands fa-pinterest"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
