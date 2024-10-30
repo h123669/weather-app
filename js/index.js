@@ -2,7 +2,7 @@ getData("egypt")
 
 async function getData(country) {
     try {
-        let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=a8e6b8f05d4e41f8836125536243010&q=${country}&days=3`);
+        let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=a8e6b8f05d4e41f8836125536243010&q=${country}&days=3`);
         let product = await response.json();
         console.log(product);
         dis_Degree(product);
