@@ -1,9 +1,9 @@
-// let list = [];
+getData("egypt")
+
 async function getData(country) {
     try {
-        let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=c0ff89d75f50428daae192718242809&q=${country}&days=3`);
+        let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=a8e6b8f05d4e41f8836125536243010&q=${country}&days=3`);
         let product = await response.json();
-        // list = product;
         console.log(product);
         dis_Degree(product);
     } catch (error) {
@@ -50,7 +50,7 @@ function dis_Degree(product) {
                         </div>
                         <div class="card-body">
                             <div class="info d-flex flex-column justify-content-center align-items-center">
-                                <div class="location">${product.location.country}</div>
+                                <div class="location">${product.location.name}</div>
                                 <div class="degree">${dayData.day.avgtemp_c}°C</div>
                                 <img src="${dayData.day.condition.icon}" class="w-25" alt="">
                             </div>
@@ -60,15 +60,15 @@ function dis_Degree(product) {
                             <div class="contain d-flex justify-content-between">
                                 <span>
                                     <img src="img/icon-umberella.png" alt="" srcset="">
-                                    20%
+                                    ${dayData.day.avghumidity}%
                                 </span>
                                 <span>
                                     <img src="img/icon-compass.png" alt="" srcset="">
-                                    18km/h
+                                    ${dayData.day.maxwind_kph}km/h
                                 </span>
                                 <span>
                                     <img src="img/icon-wind.png" alt="" srcset="">
-                                    East
+                                    ${dayData.hour[i].wind_dir}
                                 </span>
                             </div>
                         </div>
